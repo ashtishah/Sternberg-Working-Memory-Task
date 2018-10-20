@@ -1,1 +1,5 @@
 # Sternberg Working Memory Task
+This repository contains all of the necessary files to run the Sternberg Working Memory (SWMT) Task. This task is a SWMT calibrated to the appropriate difficulty for each subject. There are 45 events, 15 events of each load size (2, K, K+1); events are displayed randomly.
+
+#Getting Started 
+You will need to create a folder in the directory that you store SWMTTools.py and SWMT.py called 'Backgrounds'. Put all of the .tiff images in the 'Backgrounds' folder. The SWMTTools.py and SWMT.py files utilize libraries from PscyhoPy. I reccomend downloading PsychoPy and working out of this program. SWMT.py is used to run the acutal experiment and utilizes SWMTTools.py. The task is divded into two runs '1' and '2' so that participants can take a small break in between each run. Each run will need to be run separately. After every epoch in the SWMT, a data frame is saved as a .csv containing the subject's response, whether or not it was a hit/false alarm/miss, and reaction time. At the conclusion of the task, another data frame containing a summary of the subject's statistics is exported to a .csv. 
